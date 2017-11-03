@@ -40,8 +40,9 @@ public class Bathroom {
 
     public Boolean addPersonInBathroom(Person p) {
         if ( (persons.size() == 0 || persons.element().getClass() == p.getClass()) && persons.size() < limitOfPersons) {
-            System.out.println(p.getClass().getName().replace("entity.", "") + " " + p.getPersonName() + " enter in bathroom. Time of use: " + p.getTimeUsingBath() + "ms");
             persons.add(p);
+            System.out.println(p.getClass().getName().replace("entity.", "") + " " + p.getPersonName() + " enter in bathroom. Time of use: " + p.getTimeUsingBath() + "ms");
+            System.out.println("There are " + persons.size() + " persons in bathroom");
             return true;
         }
         return false;
@@ -50,6 +51,7 @@ public class Bathroom {
     public void removePersonOfBathroom(Person p){
         persons.remove(p);
         System.out.println(p.getClass().getName().replace("entity.", "") + " " + p.getPersonName() + " exit of bathroom.");
+        System.out.println("There are " + persons.size() + " persons in bathroom");
     }
 
     public Semaphore getSemaphore() {

@@ -1,5 +1,3 @@
-package business;
-
 import entity.Bathroom;
 import entity.Man;
 import entity.Person;
