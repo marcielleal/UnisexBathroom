@@ -15,10 +15,10 @@ public class Main {
         Random random = new Random();
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Limite de pessoas que podem utilizar o banheiro ao mesmo tempo: ");
+        System.out.println("Limit people who can use the bathroom at the same time: ");
         limitBathroom = sc.nextInt();
 
-        System.out.println("Número de pessoas que utilizarão o banheiro: ");
+        System.out.println("Number of people that will use the bathroom: ");
         numberPersons = sc.nextInt();
         sc.close();
 
